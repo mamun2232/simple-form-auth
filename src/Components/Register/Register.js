@@ -3,7 +3,7 @@ import { Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import { createUserWithEmailAndPassword, getAuth, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword } from "firebase/auth";
 import app from '../../firebase.init';
-
+import './Register.css'
 const auth = getAuth(app);
 const Register = () => {
   const [email, setEmail] = useState('')
